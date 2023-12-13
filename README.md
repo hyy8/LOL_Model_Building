@@ -77,7 +77,7 @@
     </tr>
   </tbody>
 </table>
-<iframe src="assets/confusion_matrix.html" width=500 height=300 frameBorder=0></iframe>
+<iframe src="assets/confusion_matrix.html" width=800 height=800 frameBorder=0></iframe>
 
 <h1><strong> Fairness Analysis </strong></h1>
 
