@@ -8,6 +8,10 @@
 <h1><strong> Framing the Problem </strong></h1>
 
 <h1><strong> Baseline Model </strong></h1>
+<h2><strong> Model Description</strong></h2>
+<h2><strong> Features</strong></h2>
+<h2><strong> Performance</strong></h2>
+
 <table border="1" class="dataframe">
   <thead>
     <tr>
