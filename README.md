@@ -23,23 +23,23 @@
   <tbody>
     <tr>
       <th>Accuracy</th>
-      <td>0.630649</td>
-      <td>0.629711</td>
+      <td>0.631882</td>
+      <td>0.622429</td>
     </tr>
     <tr>
       <th>Precision</th>
-      <td>0.642093</td>
-      <td>0.645764</td>
+      <td>0.640237</td>
+      <td>0.623310</td>
     </tr>
     <tr>
       <th>Recall</th>
-      <td>0.549810</td>
-      <td>0.542905</td>
+      <td>0.561376</td>
+      <td>0.550000</td>
     </tr>
     <tr>
       <th>F1 Score</th>
-      <td>0.592379</td>
-      <td>0.589884</td>
+      <td>0.598219</td>
+      <td>0.584365</td>
     </tr>
   </tbody>
 </table>
@@ -57,23 +57,23 @@
   <tbody>
     <tr>
       <th>Accuracy</th>
-      <td>0.714698</td>
-      <td>0.712792</td>
+      <td>0.712993</td>
+      <td>0.708253</td>
     </tr>
     <tr>
       <th>Precision</th>
-      <td>0.711337</td>
-      <td>0.712234</td>
+      <td>0.709751</td>
+      <td>0.698404</td>
     </tr>
     <tr>
       <th>Recall</th>
-      <td>0.699310</td>
-      <td>0.695457</td>
+      <td>0.697191</td>
+      <td>0.696023</td>
     </tr>
     <tr>
       <th>F1 Score</th>
-      <td>0.705272</td>
-      <td>0.703746</td>
+      <td>0.703415</td>
+      <td>0.697211</td>
     </tr>
   </tbody>
 </table>
