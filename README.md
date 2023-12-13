@@ -20,12 +20,12 @@
     <tr>
       <th>Accuracy</th>
       <td>0.627402</td>
-      <td>0.635150</td>
+      <td><strong>0.635150</strong></td>
     </tr>
     <tr>
       <th>Precision</th>
       <td>0.630365</td>
-      <td>0.642145</td>
+      <td><strong>0.642145</strong></td>
     </tr>
     <tr>
       <th>Recall</th>
@@ -54,12 +54,12 @@
     <tr>
       <th>Accuracy</th>
       <td>0.710178</td>
-      <td>0.711444</td>
+      <td><strong>0.711444</strong></td>
     </tr>
     <tr>
       <th>Precision</th>
       <td>0.703347</td>
-      <td>0.707910</td>
+      <td><strong>0.707910</strong></td>
     </tr>
     <tr>
       <th>Recall</th>
@@ -73,7 +73,7 @@
     </tr>
   </tbody>
 </table>
-<iframe src="assets/confusion_matrix.html" width=800 height=800 frameBorder=0></iframe>
+<iframe src="assets/confusion_matrix.html" width=700 height=600 frameBorder=0></iframe>
 
 <h1><strong> Fairness Analysis </strong></h1>
 
