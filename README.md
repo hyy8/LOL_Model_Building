@@ -76,25 +76,23 @@ The nominal features (firstdragon and firstherald) are one-hot encoded using One
     </tr>
   </tbody>
 </table>
+<p>We found that the model's metrics are relatively consistent between the training and testing sets, suggesting that it has not overfitted to the training data. However, the values of the metrics indicate there is room for improvement.</p>
 <p>
   The model achieved an F1 score of 0.5924. The F1 score is a balanced measure of a model's precision and recall, especially important in the context of your dataset's imbalance. An F1 score close to 0.6 suggests that our model has a moderate performance in balancing precision and recall.
 </p>
 
 <h1><strong> Final Model </strong></h1>
 <h2><strong> Data Visualization</strong></h2>
-<p>Below is a graph showing the relationship between  ‘killsat15’ and 'firstbaron.</p>
+<p>Below Below are visual representation of  ‘killsat15’ ,‘golddiffat15’ ,‘xpdiffat15’,‘csdiffat15’,‘heralds’.</p>
 <iframe src="assets/killsat15.html" width=500 height=300 frameBorder=0></iframe>
 
-<p>Below is a graph showing the relationship between  ‘golddiffat15’ and 'firstbaron.</p>
+
 <iframe src="assets/golddiffat15.html" width=500 height=300 frameBorder=0></iframe>
 
-<p>Below is a graph showing the relationship between  ‘xpdiffat15’ and 'firstbaron.</p>
 <iframe src="assets/xpdiffat15.html" width=500 height=300 frameBorder=0></iframe>
 
-<p>Below is a graph showing the relationship between  ‘csdiffat15’ and 'firstbaron.</p>
 <iframe src="assets/csdiffat15.html" width=500 height=300 frameBorder=0></iframe>
 
-<p>Below is a graph showing the relationship between  ‘heralds’ and 'firstbaron.</p>
 <iframe src="assets/heralds.html" width=500 height=300 frameBorder=0></iframe>
 
 <p>The metrics below presented in the table provide a quantitative assessment of the Final model's performance on both the training and testing datasets.</p>
