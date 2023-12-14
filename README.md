@@ -160,29 +160,50 @@ The experience difference between teams at 15 minutes. Similar to gold differenc
 <iframe src="assets/confusion_matrix.html" width=800 height=800 frameBorder=0></iframe>
 
 <h1><strong> Fairness Analysis </strong></h1>
+<h2><strong>Choice of Groups</strong></h2>
+<p><strong>● Group X: </strong>
+   Matches played by the teams from the LCK League.
+</p>
+<p><strong>● Group Y: </strong>
+   Matches played by the teams from the LCS League.
+</p>
+<p>These groups are chosen based on the different leagues in the dataset to compare the model's performance across these distinct subsets.
+</p>
+<h2><strong>Null and Alternative Hypotheses</strong></h2>
 <p>
-  <strong>Null Hypothesis (H0):</strong>
-  The classifier’s F1 score is the same for both LCK league and LCS league, and any differences are due to chance. 
+  <strong>● Null Hypothesis (H0):</strong>
+   The classifier’s F1 score is the same for both LCK league and LCS league matches. Any observed differences in the F1 scores are due to random variation.
 </p>
 <p>
-  <strong>Alternative Hypothesis (H1):</strong>
-  The classifier’s F1 score is significant difference for both LCK league and LCS league.
+  <strong>● Alternative Hypothesis (H1):</strong>
+   There is a significant difference in the classifier’s F1 score between LCK league and LCS league matches.
+</p>
+<h2><strong>Choice of Test Statistic</strong></h2>
+<p>
+  <strong>● Test Statistic:</strong>
+   Difference in F1 scores between the two groups.
+The test statistic is the absolute difference in F1 scores between Group X (LCK) and Group Y (LCS), as it directly measures the disparity in model performance across the groups.
+
 </p>
 <p>
   <strong>Observed difference in f1 score:-0.11534642780056137</strong>
 </p>
+<h2><strong>Significant Level</strong></h2>
+<p>
+  The significance level (α) is 0.05, implying a 5% risk of concluding that a difference exists when there is none. 
+</p>
+<h2><strong>Resulting P-Value</strong></h2>
+<p>
+  <strong>● p_value: Approximately 0.079</strong>
+</p>
+<p>This p-value indicates the probability of observing a difference as large as the one in your sample data if the null hypothesis is true.
+</p>
 
+<iframe src="assets/permutation_test_distribution.html" width=800 height=500 frameBorder=0></iframe>
+<h2><strong>Conclusion</strong></h2>
 <p>
-  <strong>Significant Level: 0.05</strong>
+ Given the p-value of 0.079, which is much higher than the typical significance level (e.g., 0.05), we fail to reject the null hypothesis. Hence, this result suggests that there is no statistically significant difference in the performance of the model (in terms of F1 score) between matches from the LCK league and the LCS league. Therefore, based on this analysis, we conclude that any observed differences in F1 scores are likely due to chance, implying that the model performs fairly and consistently across these two groups.
 </p>
-<p>
-  <strong>p_value: 0.079</strong>
-</p>
-<p>
-  <strong>Result:Fail to Reject the Null Hypothesis(H0).</strong>
-</p>
-
-<iframe src="assets/permutation_test_distribution.html" width=800 height=800 frameBorder=0></iframe>
 
 </body>
 </html>
