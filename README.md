@@ -18,9 +18,38 @@ To ensure the rationality of our predictions, we exclusively utilize features de
 
 <h1><strong> Baseline Model </strong></h1>
 <h2><strong> Model Description</strong></h2>
-<h2><strong> Features</strong></h2>
-<h2><strong> Performance</strong></h2>
+<p>
+  In our Baseline model, we intend to predict whether the team will secure the first baron based on whether the team has secured the binary features such as first dragon and first herald, and the quantitative feature like the number of kills of the team at the first 15 minutes. We use a logistic regression classifier, which is a suitable choice for binary classification problems.
 
+</p>
+<h2><strong> Features in the Model</strong></h2>
+<p>
+The baseline model uses three features:
+</p>
+<p><strong>●firstdragon -</strong>
+  Indicates whether the team got the first dragon (Nominal).
+</p>
+<p><strong>●killsat15 -</strong>
+  The number of kills at 15 minutes (Quantitative).
+</p>
+<p><strong>●firstherald -</strong>
+  Indicates whether the team got the first herald (Nominal).
+</p>
+<p>
+ These features combine both nominal and quantitative data types.
+</p>
+<h2><strong>Feature Processing</strong></h2>
+<p><strong>●Standardization: </strong>
+  The killsat15 feature is standardized using StandardScaler. This process normalizes the feature, ensuring that it has a mean of 0 and a standard deviation of 1, which is essential for logistic regression to perform well.
+
+</p><strong>●One-Hot Encoding:  </strong>
+The nominal features (firstdragon and firstherald) are one-hot encoded using OneHotEncoder. This encoding is crucial for handling nominal data in logistic regression, as it converts categorical variables into a form that could be provided to ML algorithms to do a better job in prediction.
+
+<p>
+  
+</p>
+<h2><strong> Performance</strong></h2>
+<p>The metrics below presented in the table provide a quantitative assessment of the Baseline model's performance on both the training and testing datasets.</p>
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -30,11 +59,6 @@ To ensure the rationality of our predictions, we exclusively utilize features de
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>Accuracy</th>
-      <td>0.631882</td>
-      <td>0.622429</td>
-    </tr>
     <tr>
       <th>Precision</th>
       <td>0.640237</td>
@@ -52,6 +76,9 @@ To ensure the rationality of our predictions, we exclusively utilize features de
     </tr>
   </tbody>
 </table>
+<p>
+  The model achieved an F1 score of 0.5924. The F1 score is a balanced measure of a model's precision and recall, especially important in the context of your dataset's imbalance. An F1 score close to 0.6 suggests that our model has a moderate performance in balancing precision and recall.
+</p>
 
 <h1><strong> Final Model </strong></h1>
 <h2><strong> Data Visualization</strong></h2>
@@ -70,6 +97,7 @@ To ensure the rationality of our predictions, we exclusively utilize features de
 <p>Below is a graph showing the relationship between  ‘heralds’ and 'firstbaron.</p>
 <iframe src="assets/heralds.html" width=500 height=300 frameBorder=0></iframe>
 
+<p>The metrics below presented in the table provide a quantitative assessment of the Final model's performance on both the training and testing datasets.</p>
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -79,11 +107,6 @@ To ensure the rationality of our predictions, we exclusively utilize features de
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>Accuracy</th>
-      <td>0.712993</td>
-      <td>0.708253</td>
-    </tr>
     <tr>
       <th>Precision</th>
       <td>0.709751</td>
