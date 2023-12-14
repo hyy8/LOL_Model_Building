@@ -55,15 +55,19 @@ To ensure the rationality of our predictions, we exclusively utilize features de
 
 <h1><strong> Final Model </strong></h1>
 <h2><strong> Data Visualization</strong></h2>
-<p>Below are visual representations of ‘killsat15’, ‘golddiffat15’, ‘xpdiffat15’, ‘csdiffat15’, ‘heralds.html’:</p>
+<p>Below is a graph showing the relationship between  ‘killsat15’ and 'firstbaron.</p>
 <iframe src="killsat15.html" width=500 height=300 frameBorder=0></iframe>
 
+<p>Below is a graph showing the relationship between  ‘golddiffat15’ and 'firstbaron.</p>
 <iframe src="golddiffat15.html" width=500 height=300 frameBorder=0></iframe>
 
+<p>Below is a graph showing the relationship between  ‘xpdiffat15’ and 'firstbaron.</p>
 <iframe src="xpdiffat15.html" width=500 height=300 frameBorder=0></iframe>
 
+<p>Below is a graph showing the relationship between  ‘csdiffat15’ and 'firstbaron.</p>
 <iframe src="csdiffat15.html" width=500 height=300 frameBorder=0></iframe>
 
+<p>Below is a graph showing the relationship between  ‘heralds’ and 'firstbaron.</p>
 <iframe src="heralds.html" width=500 height=300 frameBorder=0></iframe>
 
 <table border="1" class="dataframe">
