@@ -1,4 +1,4 @@
-# LOL_Model_Building
+# LOL_FirstBaron_Prediction_Model
 <html>
 <body>
 <p>
@@ -60,16 +60,6 @@ The nominal features (firstdragon and firstherald) are one-hot encoded using One
   </thead>
   <tbody>
     <tr>
-      <th>Precision</th>
-      <td>0.640237</td>
-      <td>0.623310</td>
-    </tr>
-    <tr>
-      <th>Recall</th>
-      <td>0.561376</td>
-      <td>0.550000</td>
-    </tr>
-    <tr>
       <th>F1 Score</th>
       <td>0.598219</td>
       <td>0.584365</td>
@@ -126,7 +116,10 @@ The experience difference between teams at 15 minutes. Similar to gold differenc
 </p>
 <h2><strong>Modeling Algorithm, Hyperparameters, and Selection Method</strong></h2>
 <p>
-  We continued using the logistic regression classifier, which is the most suitable algorithm for the binary classification tasks.For hyperparameters, we
+  We continued using the logistic regression classifier, which is the most suitable algorithm for the binary classification tasks.For the hyperparameter tuning, we use GridSearchCV, which systematically works through multiple combinations of hyperparameter options, cross-validates the results, and determines the combination that gives the best performance based on a specified scoring metric. In this case, the hyperparameter grid consisted of different values for C, the inverse of the regularization strength, with the values [0.001, 0.01, 0.1, 1, 10]. The C parameter controls the trade-off between achieving a low training error and a low test error; smaller values specify stronger regularization.The best hyperparameter from the grid search we got was C: 0.01. This value indicates that a moderate level of regularization was found to be optimal, suggesting that some penalty against complexity to prevent overfitting was beneficial for the model, but not so much as to overly constrain the model which could lead to underfitting.
+</p>
+<p>
+  Our final model showed significant improvement over the baseline model, with its training and testing F1 scores increasing from 0.5982 to 0.7034 and from 0.5844 to 0.6972, respectively. This improvement is attributed to the addition of more descriptive nominal and quantitative features, reflecting teams' early game performance. We effectively utilized OneHotEncoder for nominal features and StandardScaler for quantitative features, enhancing data representation. Moreover, the careful optimization of hyperparameters enabled our model to capture more complex patterns in the data, resulting in better prediction accuracy.
 </p>
 
 <p>The metrics below presented in the table provide a quantitative assessment of the Final model's performance on both the training and testing datasets.</p>
@@ -139,16 +132,6 @@ The experience difference between teams at 15 minutes. Similar to gold differenc
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>Precision</th>
-      <td>0.709751</td>
-      <td>0.698404</td>
-    </tr>
-    <tr>
-      <th>Recall</th>
-      <td>0.697191</td>
-      <td>0.696023</td>
-    </tr>
     <tr>
       <th>F1 Score</th>
       <td>0.703415</td>
@@ -169,6 +152,23 @@ The experience difference between teams at 15 minutes. Similar to gold differenc
 </p>
 <p>These groups are chosen based on the different leagues in the dataset to compare the model's performance across these distinct subsets.
 </p>
+<p><strong> The Evaluation Metric is shown below:</strong></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th style="text-align: left">Metrics</th>
+      <th style="text-align: left">Group LCK</th>
+      <th style="text-align: left">Group LCS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>F1 Score</th>
+      <td>0.663415</td>
+      <td>0.778761</td>
+    </tr>
+  </tbody>
+</table>
 <h2><strong>Null and Alternative Hypotheses</strong></h2>
 <p>
   <strong>● Null Hypothesis (H0):</strong>
