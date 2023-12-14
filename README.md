@@ -98,11 +98,13 @@ The experience difference between teams at 15 minutes. Similar to gold differenc
 <p><strong>● side: </strong>
   Which side of the map the team is on. Map side can subtly influence a team's strategy and ease of access to baron.
 </p>
+<iframe src="assets/side_firstbaron_relationship.html" width=500 height=300 frameBorder=0></iframe>
 <p>Other than the features we newly added to the final model, we decided to keep the features in our baseline model because they are all related to the team’s performance in the first twenty minutes.
 </p>
 <p><strong>● firstdragon: </strong>
    This feature indicates whether the team secured the first dragon of the game. The significance of the first dragon kill is twofold. Firstly, it provides a direct combat or utility advantage based on the type of dragon slain. Secondly, it suggests early game control, which can correlate with a team's ability to secure other objectives like the baron. This is a strategic indicator reflecting early game dominance.
 </p>
+<iframe src="assets/firstdragon_firstbaron_relationship.html" width=500 height=300 frameBorder=0></iframe>
 <p><strong>● killsat15: </strong>
    The number of kills at 15 minutes is a direct measure of a team's aggression and success in early game skirmishes. A higher kill count can indicate a team's strength and control, which can translate into a higher likelihood of securing major objectives. Kills also lead to gold and experience advantages, further influencing a team's capacity to contest and secure the baron.
 </p>
@@ -111,6 +113,7 @@ The experience difference between teams at 15 minutes. Similar to gold differenc
    Similar to the first dragon, securing the first herald is indicative of early game map control. The Rift Herald, specifically, provides a strategic advantage in terms of pushing lanes and creating pressure, which could translate into better positioning and control around the baron pit. It's also a sign of a team's prioritization of early objectives, which can be a precursor to their approach towards the baron.
 
 </p>
+<iframe src="assets/firstherald_firstbaron_relationship.html" width=500 height=300 frameBorder=0></iframe>
 <p>
   These features are directly related to a team's performance and resource control in the game, making them highly relevant for predicting the likelihood of securing the first baron.
 </p>
