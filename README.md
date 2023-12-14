@@ -6,6 +6,13 @@
   Leni Dai, Hongyu Yu
 </p>
 <h1><strong> Framing the Problem </strong></h1>
+<p>
+In League of Legends, achieving certain milestones can significantly sway the momentum towards a 'temporary victory.' One of these pivotal moments is securing the first baron, which spawns twenty minutes into the game. The team that vanquishes the first baron gains substantial advantages, including a 300 gold and 900 experience boost per player, equating to the benefits of a solo kill for each team member. Given the strategic importance of this objective, predicting which team will secure the first baron using match data from the initial twenty minutes offers valuable insights into the early game dynamics.
+
+For our predictive model, we utilized data from professional league matches in 2023, focusing on the binary outcome of whether a team secures the first baron. We observed that some matches conclude before the baron's appearance, leading us to exclude any game ending in less than 20 minutes as they do not align with our research objective. Although this ensures the presence of the baron in each analyzed match, we still face an imbalanced dataset as some matches conclude without either team defeating the baron. Given the equal significance of false positives (incorrectly predicting a team will secure the first baron) and false negatives (failing to predict a team's success in this endeavor), we identified the F1 score as the most suitable metric. It strikes a balance between precision and recall, offering a comprehensive evaluation of our model's performance amidst the dataset's imbalance.
+
+To ensure the rationality of our predictions, we exclusively utilize features derived from the first twenty minutes of gameplay. This approach excludes data elements not guaranteed within this timeframe, such as firstTower and firstKill. Our focus remains on discerning which team is more likely to claim the first baron, based on differential variables like experience, gold, and creep score (cs), gathered during the early stages of the match.
+</p>
 
 <h1><strong> Baseline Model </strong></h1>
 <h2><strong> Model Description</strong></h2>
