@@ -126,7 +126,7 @@ The experience difference between teams at 15 minutes. Similar to gold differenc
 </p>
 <h2><strong>Modeling Algorithm, Hyperparameters, and Selection Method</strong></h2>
 <p>
-  We continued using the logistic regression classifier, which is the most suitable algorithm for the binary classification tasks.
+  We continued using the logistic regression classifier, which is the most suitable algorithm for the binary classification tasks.For hyperparameters, we
 </p>
 
 <p>The metrics below presented in the table provide a quantitative assessment of the Final model's performance on both the training and testing datasets.</p>
@@ -160,10 +160,29 @@ The experience difference between teams at 15 minutes. Similar to gold differenc
 <iframe src="assets/confusion_matrix.html" width=800 height=800 frameBorder=0></iframe>
 
 <h1><strong> Fairness Analysis </strong></h1>
+<p>
+  <strong>Null Hypothesis (H0):</strong>
+  The classifier’s F1 score is the same for both LCK league and LCS league, and any differences are due to chance. 
+</p>
+<p>
+  <strong>Alternative Hypothesis (H1):</strong>
+  The classifier’s F1 score is significant difference for both LCK league and LCS league.
+</p>
+<p>
+  <strong>Observed difference in f1 score:-0.11534642780056137</strong>
+</p>
 
+<p>
+  <strong>Significant Level: 0.05</strong>
+</p>
+<p>
+  <strong>p_value: 0.079</strong>
+</p>
+<p>
+  <strong>Result:Fail to Reject the Null Hypothesis(H0).</strong>
+</p>
 
+<iframe src="assets/permutation_test_distribution.html" width=800 height=800 frameBorder=0></iframe>
 
-
-  
 </body>
 </html>
