@@ -54,6 +54,13 @@ To ensure the rationality of our predictions, we exclusively utilize features de
 </table>
 
 <h1><strong> Final Model </strong></h1>
+<h2><strong> Data Visualization</strong></h2>
+<p>Below are visual representations of ‘killsat15’, ‘golddiffat15’, ‘xpdiffat15’, ‘csdiffat15’, ‘heralds.html’:</p>
+<iframe src="killsat15.html" width=500 height=300 frameBorder=0></iframe>
+<iframe src="golddiffat15.html" width=500 height=300 frameBorder=0></iframe>
+<iframe src="xpdiffat15.html" width=500 height=300 frameBorder=0></iframe>
+<iframe src="csdiffat15.html" width=500 height=300 frameBorder=0></iframe>
+<iframe src="heralds.html" width=500 height=300 frameBorder=0></iframe>
 
 <table border="1" class="dataframe">
   <thead>
